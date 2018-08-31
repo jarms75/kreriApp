@@ -1,0 +1,7 @@
+{
+  "name": "kreriApp01",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
