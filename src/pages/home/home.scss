@@ -1,3 +1,62 @@
 page-home {
 
+    .home {
+        ion-list {
+          border-radius: 1rem;
+          overflow: hidden;
+      
+          ion-item,
+          .item:first-child,
+          .item:last-child {
+            border: none;
+          }
+      
+          ion-datetime {
+            padding-left: 0;
+          }
+        }
+      }
+      
+      .category-concept-card
+          {
+              background-color: #FFF;
+              border-radius: 15px;
+              box-shadow: 0 0 1px rgba(86, 61, 124, 0.2), 0 2px 4px rgba(86, 61, 124, 0.15);
+              vertical-align: middle;
+              margin-bottom: 8px;
+              margin-top: 8px;
+              
+              .category-title
+              {
+                  color: #222;
+                  font-weight: 600;
+                  font-size: 1.8rem;
+                  margin: 0px;
+                  padding: 0;
+              }
+      
+              .category-description
+              {
+                  color: rgb(41, 133, 37);
+                  margin-bottom: 0px;
+              }
+      
+              .category-tag
+              {
+                  border: 1px solid #FFF;
+                  color: #FFF;
+                  background: transparent;
+                  font-weight: 300;
+                  margin-right: 4px;
+                  opacity: 0.6;
+              }
+      
+              .no-paddingTB {
+                  padding-top: 8px !important;
+                  padding-bottom: 0 !important;
+                  margin-top: 0 !important;
+                  margin-bottom: 0 !important;
+              }
+          }
+
 }

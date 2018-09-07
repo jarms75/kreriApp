@@ -1,0 +1,36 @@
+ion-content {
+    background: linear-gradient(0deg, #eeeef1 0%, white 80%, white 100%);
+  }
+
+   
+   
+   
+   
+   
+   
+   
+  // Following, Followers and all..
+  .profile-numbers {
+    background:  rgb(252, 252, 252);
+    padding-bottom: 8px;
+    p {
+      color: #444;
+      font-size: medium;
+      margin-bottom: 0px;
+    }
+    span {
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: #34354c;
+    }
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background:  rgb(76, 73, 228);
+    background: -webkit-linear-gradient(left, hsla(0, 0%, 0%, 0) 0%, rgb(188, 198, 214) 50%, hsla(0, 0%, 0%, 0) 100%);
+  }
+  // Posts feed
+  #posts {
+    text-align: justify;
+  }

@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+          <strong>감정평가 관련 개별법령 조사표</strong> 
+        </ion-title>
+        <ion-buttons end>
+          <button ion-button tappable (click)="openSearch()">
+            <ion-icon name="search"></ion-icon>
+          </button>
+          <button ion-button tappable  (click)="openHintModal()">
+            <ion-icon name="help-circle"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-navbar>
+  </ion-header>
+  
+<ion-content>
+
+     
+    <ion-row class="profile-numbers">
+      <ion-col col-3 text-center>
+        <p>구분</p>
+        <span> </span>
+      </ion-col>
+      <ion-col col-5 text-center>
+        <p>법령명</p>
+        <span> </span>
+      </ion-col>
+      <ion-col col-4 text-center>
+        <p>적용법규</p>
+        <span></span>
+      </ion-col>
+    </ion-row>
+    <hr/>
+    
+    <ion-list>
+        <button ion-item *ngFor="let law of laws" (click)="itemTapped($event, law)">
+          <ion-icon name="{{law.idx}}" item-left></ion-icon>
+          {{law.legalName}}
+          <div class="item-note" item-right>
+            {{law.ruleName}}
+          </div>
+        </button>
+      </ion-list>
+</ion-content>
